@@ -8,7 +8,7 @@ public class BubbleSort {
              lastUnsortedIndex--) {
             for (int i = 0; i < lastUnsortedIndex; i++) {
                 if (array[i] > array[i + 1]) {
-                    swap(array, i, i + 1);
+                    General.swap(array, i, i + 1);
                 }
             }
         }
@@ -16,13 +16,4 @@ public class BubbleSort {
         return array;
     }
 
-    public static void swap(int[] array, int i, int j) {
-        if (i == j) {
-            return;
-        }
-
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
 }
