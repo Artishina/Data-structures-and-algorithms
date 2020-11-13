@@ -8,7 +8,9 @@ public class Main {
 
         //BubbleSort.doBubbleSort(array);
 
-        SelectionSort.selectionSort(array);
+       // SelectionSort.selectionSort(array);
+
+        InsertionSort.doInsertionSort(array);
 
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i] + " ");
